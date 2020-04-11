@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "control-clientes-udemy": {
+      "hosting": {
+        "control-clientes": [
+          "control-clientes-udemy"
+        ]
+      }
+    }
+  }
+}
