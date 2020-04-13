@@ -27,6 +27,10 @@ import { FooterComponent } from './components/footer/footer.component';
 
 // Services
 import { ClienteService } from './services/cliente.service';
+import { LoginService } from './services/login.service';
+import { AuthGuardService } from './services/auth-guard.service';
+import { ConfiguracionService } from './services/configuracion.service';
+import { ConfigGuardService } from './services/config-guard.service';
 
 @NgModule({
   declarations: [
@@ -51,7 +55,12 @@ import { ClienteService } from './services/cliente.service';
     FlashMessagesModule.forRoot()
   ],
   providers: [
-    ClienteService
+    ClienteService,
+    LoginService,
+    AuthGuardService,
+    ConfiguracionService,
+    ConfigGuardService,
+    { provide: SETTINGS, useValue: {} }
   ],
   bootstrap: [
     AppComponent

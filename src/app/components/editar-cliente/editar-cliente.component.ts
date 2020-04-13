@@ -46,7 +46,7 @@ export class EditarClienteComponent implements OnInit {
   }
 
   eliminarCliente() {
-    if(confirm('¿Seguro que deseas eliminar el cliente?')) {
+    if (confirm('¿Seguro que deseas eliminar el cliente?')) {
       this.clienteService.eliminarCliente(this.cliente);
       this.router.navigate(['/']);
     }
